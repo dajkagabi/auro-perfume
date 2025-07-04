@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import { useCart } from "../CartContext/CartContext"; // Szükséges a kosár funkcióhoz
 
-const Navbar = () => {
+const Navbar = ({ onCartClick }) => { // onCartClick prop fogadása
   const [menuOpen, setMenuOpen] = useState(false);
+  useCart(); // Most már nem bontjuk ki a cartItems-t, mert nem használjuk vizuálisan az ikonnál
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
@@ -31,6 +33,7 @@ const Navbar = () => {
 
         {/* JOBB OLDAL: ikonok + hamburger */}
         <div className="flex items-center space-x-4 text-gray-700">
+          {/* Kívánságlista ikon - Változatlan marad */}
           <Link to="/wishlist" className="hover:text-gray-500">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -42,7 +45,8 @@ const Navbar = () => {
             </svg>
           </Link>
 
-          <Link to="/cart" className="relative hover:text-gray-500">
+          {/* Kosár ikon - A Link helyett button-t használunk az onClick miatt, de az SVG és a ping span változatlan */}
+          <button onClick={onCartClick} className="relative hover:text-gray-500 focus:outline-none">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 
@@ -54,8 +58,9 @@ const Navbar = () => {
                 014 0z" />
             </svg>
             <span className="absolute top-0 right-0 h-2 w-2 rounded-full bg-pink-500 animate-ping"></span>
-          </Link>
+          </button>
 
+          {/* Felhasználói profil ikon - Változatlan marad */}
           <Link to="/profile" className="hover:text-gray-500">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -67,7 +72,7 @@ const Navbar = () => {
               </svg>
           </Link>
 
-          {/* HAMBURGER gomb csak mobilra */}
+          {/* HAMBURGER gomb csak mobilra - Változatlan marad */}
           <button
             className="md:hidden text-gray-700 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
