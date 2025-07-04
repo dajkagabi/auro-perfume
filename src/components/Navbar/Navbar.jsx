@@ -8,9 +8,9 @@ const Navbar = () => {
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <nav className="flex items-center justify-between h-16 px-4 md:px-6">
-        {/* BAL OLDAL: Logo */}
+        
         <Link to="/" className="flex items-center space-x-2">
-          <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
+          <img src={logo} alt="Logo" className="h-18 w-auto object-contain" />
         </Link>
 
         {/* KÖZÉP: Menüpontok csak desktopon */}

@@ -1,8 +1,13 @@
 import React from 'react'
+import Hero from '../Hero/Hero'
+import FeatureIcons from '../FeaturesIcon/FeaturesIcon'
 
 const Home = () => {
   return (
-    <div>Home</div>
+   <main>
+    <Hero />
+    <FeatureIcons />
+   </main>
   )
 }
 
