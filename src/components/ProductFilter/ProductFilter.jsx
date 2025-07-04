@@ -1,4 +1,4 @@
-import React from 'react'; // Nincs szükség useState-re itt!
+import React from 'react'; 
 
 const ProductFilter = ({
   searchTerm,
@@ -7,7 +7,7 @@ const ProductFilter = ({
   setSelectedCategory,
   sortBy,
   setSortBy,
-  // viewMode és setViewMode propok eltávolítva
+ 
 }) => {
   const categories = ['All', 'Eau de Parfum', 'Eau de Toilette', 'Eau Fraiche'];
   const sortOptions = ['Featured', 'Price: Low to High', 'Price: High to Low', 'Newest Arrivals'];
@@ -24,7 +24,7 @@ const ProductFilter = ({
     setSortBy(event.target.value);
   };
 
-  // handleViewModeChange függvény eltávolítva
+
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -96,9 +96,9 @@ const ProductFilter = ({
         {/* Nézetváltó Gombok eltávolítva */}
       </div>
 
-      {/* Termékek száma - ez az érték valószínűleg a ShopPage-ről jönne, de itt van egy placeholder */}
+ 
       <div className="text-right text-gray-600 mb-8">
-        <p>Showing X of Y products</p> {/* Ezt dinamikusan kellene frissíteni a ShopPage-ről */}
+        <p>Showing X of Y products</p>
       </div>
     </div>
   );
