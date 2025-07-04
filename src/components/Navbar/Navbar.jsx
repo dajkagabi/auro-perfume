@@ -87,12 +87,12 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-4 text-gray-700 font-medium">
-          <Link to="/" className="block hover:text-gray-500">Home</Link>
-          <Link to="/category" className="block hover:text-gray-500">Category</Link>
-          <Link to="/collections" className="block hover:text-gray-500">Collections</Link>
-          <Link to="/contact" className="block hover:text-gray-500">Contact</Link>
-          <div className="flex justify-around pt-4 border-t">
+        <div className="md:hidden bg-white shadow-md px-6 py-6 space-y-6 text-gray-900 font-semibold z-50 fixed top-16 left-0 w-full">
+    <Link to="/" className="block hover:text-pink-600">Home</Link>
+    <Link to="/category" className="block hover:text-pink-600">Category</Link>
+    <Link to="/collections" className="block hover:text-pink-600">Collections</Link>
+    <Link to="/contact" className="block hover:text-pink-600">Contact</Link>
+    <div className="flex justify-around pt-4 border-t border-gray-300">
             <Link to="/wishlist" className="hover:text-gray-500">
               {/* Heart */}
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
