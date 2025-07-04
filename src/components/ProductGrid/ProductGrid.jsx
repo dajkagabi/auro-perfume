@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductCard from '../ProductCard/ProductCard'; // Itt kell importálni a ProductCard-ot
+import ProductCard from '../ProductCard/ProductCard'; 
 
 
 const ProductGrid = ({ products }) => {

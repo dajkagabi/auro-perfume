@@ -1,42 +1,30 @@
-// ProductFilter.jsx
+import React from 'react'; // Nincs szükség useState-re itt!
 
-import React, { useState } from 'react';
-
-/**
- * ProductFilter Komponens
- *
- * Ez a komponens biztosítja a termékek szűréséhez, rendezéséhez és a nézet módosításához szükséges elemeket.
- * Tartalmaz egy keresőmezőt, kategória gombokat, egy rendezési legördülő menüt és nézetváltó ikonokat.
- */
-const ProductFilter = () => {
-  // Példa state-ek a szűrők és rendezés kezelésére
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [sortBy, setSortBy] = useState('Featured');
-  const [viewMode, setViewMode] = useState('grid'); 
-
+const ProductFilter = ({
+  searchTerm,
+  setSearchTerm,
+  selectedCategory,
+  setSelectedCategory,
+  sortBy,
+  setSortBy,
+  // viewMode és setViewMode propok eltávolítva
+}) => {
   const categories = ['All', 'Eau de Parfum', 'Eau de Toilette', 'Eau Fraiche'];
-  const sortOptions = ['Featured', 'Price: Low to High', 'Price: High to Low', 'Newest Arrivals']; // Példa rendezési opciók
+  const sortOptions = ['Featured', 'Price: Low to High', 'Price: High to Low', 'Newest Arrivals'];
 
-  // Kezelőfüggvények
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
-    // Itt hívható meg a szűrés logikája
   };
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
-    // Itt hívható meg a szűrés logikája
   };
 
   const handleSortChange = (event) => {
     setSortBy(event.target.value);
-    // Itt hívható meg a rendezés logikája
   };
 
-  const handleViewModeChange = (mode) => {
-    setViewMode(mode);
-  };
+  // handleViewModeChange függvény eltávolítva
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -76,8 +64,8 @@ const ProductFilter = () => {
               onClick={() => handleCategoryChange(category)}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                 selectedCategory === category
-                  ? 'bg-black text-white' // Aktív gomb stílusa
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200' // Inaktív gomb stílusa
+                  ? 'bg-black text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
               {category}
@@ -105,38 +93,12 @@ const ProductFilter = () => {
           </div>
         </div>
 
-        {/* Nézetváltó Gombok */}
-        <div className="flex space-x-2 w-full md:w-auto justify-center md:justify-end">
-          <button
-            onClick={() => handleViewModeChange('grid')}
-            className={`p-2 rounded-md transition-colors duration-200 ${
-              viewMode === 'grid' ? 'bg-black text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-            }`}
-            aria-label="Grid view"
-          >
-            {/* Rács nézet ikon */}
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-            </svg>
-          </button>
-          <button
-            onClick={() => handleViewModeChange('list')}
-            className={`p-2 rounded-md transition-colors duration-200 ${
-              viewMode === 'list' ? 'bg-black text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-            }`}
-            aria-label="List view"
-          >
-            {/* Lista nézet ikon */}
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
+        {/* Nézetváltó Gombok eltávolítva */}
       </div>
 
-      {/* Termékek száma */}
+      {/* Termékek száma - ez az érték valószínűleg a ShopPage-ről jönne, de itt van egy placeholder */}
       <div className="text-right text-gray-600 mb-8">
-        <p>Showing 8 of 8 products</p>
+        <p>Showing X of Y products</p> {/* Ezt dinamikusan kellene frissíteni a ShopPage-ről */}
       </div>
     </div>
   );

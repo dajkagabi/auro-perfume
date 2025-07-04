@@ -1,4 +1,5 @@
 import amber from '../../assets/amber.png';
+import ocean from '../../assets/ocean.png';
 
 
 const products = [
@@ -18,7 +19,7 @@ const products = [
     category: "Eau de Toilette",
     price: 75.50,
     description: "Friss, tengeri szellő illat, a szabadság érzését nyújtja.",
-    image:  amber, 
+    image:  ocean, 
     isNew: false,
     isSale: true
   },

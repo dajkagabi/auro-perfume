@@ -56,11 +56,11 @@ const ShopPage = () => {
         setSelectedCategory={setSelectedCategory}
         sortBy={sortBy}
         setSortBy={setSortBy}
-        viewMode={viewMode}      // <-- ADJA ÁT A PROPOKAT
-        setViewMode={setViewMode} // <-- ADJA ÁT A PROPOKAT
+        viewMode={viewMode}     
+        setViewMode={setViewMode} 
       />
       <div className="container mx-auto px-4 py-8">
-        {/* ITT RENDERELJE A PRODUCTGRID KOMPONENST! */}
+    
         <ProductGrid products={filteredProducts} viewMode={viewMode} />
         <p className="text-center text-gray-600 mt-8">
           Megjelenített termékek száma: {filteredProducts.length}
