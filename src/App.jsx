@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/cart" element={<h1 className="text-2xl font-bold">Cart Page</h1>} />
           <Route path="/profile" element={<h1 className="text-2xl font-bold">Profile Page</h1>} />
         </Routes>
+        <Footer />
       </main>
     </Router>
   );

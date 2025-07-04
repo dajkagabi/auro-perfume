@@ -13,8 +13,8 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="h-18 w-auto object-contain" />
         </Link>
 
-        {/* KÖZÉP: Menüpontok csak desktopon */}
         <ul className="hidden md:flex space-x-8 font-medium text-gray-700">
+        
           <li>
             <Link to="/" className="hover:text-gray-500">Home</Link>
           </li>

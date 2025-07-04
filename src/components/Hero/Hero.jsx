@@ -8,7 +8,7 @@ const Hero = () => {
       className="relative h-[100vh] bg-cover bg-center flex items-center justify-center text-white"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* Overlay – sötétítés */}
+      
      
 
       <div className="relative z-10 text-center px-4">
