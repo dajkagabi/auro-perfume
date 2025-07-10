@@ -97,9 +97,7 @@ const ProductFilter = ({
       </div>
 
  
-      <div className="text-right text-gray-600 mb-8">
-        <p>Showing X of Y products</p>
-      </div>
+    
     </div>
   );
 };

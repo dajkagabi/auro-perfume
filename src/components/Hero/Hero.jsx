@@ -5,7 +5,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="relative w-full h-[100dvh] overflow-hidden">
-      {/* Háttérvideó */}
+    
       <video
         autoPlay
         muted
@@ -17,10 +17,10 @@ const Hero = () => {
      
       </video>
 
-      {/* Overlay */}
+    
       <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10" />
 
-      {/* Szöveg tartalom */}
+      
       <div className="relative z-20 flex flex-col justify-center items-center text-center text-white h-full px-4">
         <h1 className="text-3xl md:text-5xl font-bold drop-shadow-lg mb-2">
         Luxurious fragrances crafted with the finest ingredients to define your unique presence.

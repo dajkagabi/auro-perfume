@@ -17,14 +17,14 @@ const ProductCard = ({ product }) => {
           Sale
         </span>
       )}
-      {/* Fontos: ellenőrizze, hogy a product.image van-e használva! */}
+    
       <img src={product.image} alt={product.name} className="w-full h-64 object-cover" />
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
         <p className="text-gray-600">{product.category}</p>
         <p className="text-xl font-bold text-gray-900 mt-2">${product.price.toFixed(2)}</p>
         <button
-          onClick={() => addToCart(product)} // Hozzáadjuk a terméket a kosárhoz
+          onClick={() => addToCart(product)} 
           className="mt-4 w-full bg-black text-white py-2 rounded-md hover:bg-gray-800 transition duration-300"
         >
           Add to Cart

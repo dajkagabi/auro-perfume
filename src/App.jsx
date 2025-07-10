@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer';
 import ProductCard from './components/productCard/ProductCard';
 import Shop from './components/Shop/Shop'; 
 import Cart from './components/Cart/Cart'; 
+import Collections from './components/Collections/Collections';
 
 
 const MainNavbar = ({ onCartClick }) => {
@@ -34,15 +35,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/category" element={<Shop />} />
-            <Route path="/collections" element={<h1 className="text-2xl font-bold">Collections Page</h1>} />
+            <Route path="/collections" element={<Collections/>} />
             <Route path="/contact" element={<h1 className="text-2xl font-bold">Contact Page</h1>} />
             <Route path="/wishlist" element={<h1 className="text-2xl font-bold">Wishlist Page</h1>} />
-  
-            <Route path="/cart" element={<h1 className="text-2xl font-bold">Cart Page - Modálként kezelve</h1>} />
+            <Route path="/cart" element={<Cart/>} />
             <Route path="/profile" element={<h1 className="text-2xl font-bold">Profile Page</h1>} />
-        
             <Route path="/product/:id" element={<ProductCard/>} />
-
             <Route path="/shop" element={<Shop />} />
           </Routes>
           <Footer />

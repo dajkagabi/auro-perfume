@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { useCart } from "../CartContext/CartContext"; // Szükséges a kosár funkcióhoz
+import { useCart } from "../CartContext/CartContext"; 
 
-const Navbar = ({ onCartClick }) => { // onCartClick prop fogadása
+const Navbar = ({ onCartClick }) => { 
   const [menuOpen, setMenuOpen] = useState(false);
-  useCart(); // Most már nem bontjuk ki a cartItems-t, mert nem használjuk vizuálisan az ikonnál
+  useCart();
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">

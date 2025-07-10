@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="flex space-x-4">
           
             <a href="#" className="text-gray-400 red-200" aria-label="Facebook">
-              {/* Példa SVG ikonra */}
+              
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.502 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22h7.493c5.523 0 10-4.477 10-10z" clipRule="evenodd" /></svg>
             </a>
             <a href="#" className="text-gray-400 -200" aria-label="Twitter">
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Gyors Hivatkozások */}
+       
         <div>
           <h4 className="text-lg font-semibold text-black mb-4">Quick Links</h4>
           <ul>
@@ -43,7 +43,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Ügyfélszolgálat */}
+        
         <div>
           <h4 className="text-lg font-semibold text-black mb-4">Customer Care</h4>
           <ul>
@@ -54,7 +54,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Maradjon Kapcsolatban (Hírlevél) */}
+        
         <div>
           <h4 className="text-lg font-semibold text-black mb-4">Stay Connected</h4>
           <p className="text-sm leading-relaxed mb-4">
@@ -71,7 +71,7 @@ const Footer = () => {
               className="bg-white text-black border border-black p-3 rounded-r-md flex items-center justify-center transition-colors duration-200 hover:bg-gray-200"
               aria-label="Subscribe"
             >
-              {/* Küldés ikon (pl. nyíl) */}
+             
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
