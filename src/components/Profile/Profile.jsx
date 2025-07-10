@@ -9,14 +9,8 @@ const Signin = () => {
           <div className="w-full px-4">
             <div className="relative mx-auto max-w-[525px] overflow-hidden rounded-lg bg-white px-10 py-16 text-center sm:px-12 md:px-[60px]">
               <div className="mb-10 text-center md:mb-16">
-                <a
-                  href="/#"
-                  className="mx-auto inline-block max-w-[160px]"
-                >
-                  <img
-                    src={logo}
-                    alt="logo"
-                  />
+                <a href="/#" className="mx-auto inline-block max-w-[160px]">
+                  <img src={logo} alt="logo" />
                 </a>
               </div>
               <form>
@@ -26,13 +20,13 @@ const Signin = () => {
                   name="password"
                   placeholder="Password"
                 />
-               <div className="mb-10">
-  <input
-    type="submit"
-    value="Sign In"
-    className="w-full cursor-pointer rounded-md border border-blue-600 bg-blue-600 px-5 py-3 text-base font-medium text-white transition hover:bg-opacity-90"
-  />
-</div>
+                <div className="mb-10">
+                  <input
+                    type="submit"
+                    value="Sign In"
+                    className="w-full cursor-pointer rounded-md border border-blue-600 bg-blue-600 px-5 py-3 text-base font-medium text-white transition hover:bg-opacity-90"
+                  />
+                </div>
               </form>
               <p className="mb-6 text-base text-secondary-color ">
                 Connect With
@@ -73,7 +67,6 @@ const Signin = () => {
                         d="M19.5516 2.75538L20.9 1.25245C21.2903 0.845401 21.3968 0.53229 21.4323 0.375734C20.3677 0.939335 19.3742 1.1272 18.7355 1.1272H18.4871L18.3452 1.00196C17.4935 0.344423 16.429 0 15.2935 0C12.8097 0 10.8581 1.81605 10.8581 3.91389C10.8581 4.03914 10.8581 4.22701 10.8935 4.35225L11 4.97847L10.2548 4.94716C5.7129 4.82192 1.9871 1.37769 1.38387 0.782779C0.390323 2.34834 0.958064 3.85127 1.56129 4.79061L2.76774 6.54403L0.851613 5.6047C0.887097 6.91977 1.45484 7.95303 2.55484 8.7045L3.5129 9.33072L2.55484 9.67515C3.15806 11.272 4.50645 11.9296 5.5 12.18L6.8129 12.4932L5.57097 13.2446C3.58387 14.4971 1.1 14.4031 0 14.3092C2.23548 15.6869 4.89677 16 6.74194 16C8.12581 16 9.15484 15.8748 9.40322 15.7808C19.3387 13.7143 19.8 5.8865 19.8 4.32094V4.10176L20.0129 3.97652C21.2194 2.97456 21.7161 2.44227 22 2.12916C21.8935 2.16047 21.7516 2.22309 21.6097 2.2544L19.5516 2.75538Z"
                         fill="white"
                       />
-                      
                     </svg>
                   </a>
                 </li>
@@ -97,25 +90,20 @@ const Signin = () => {
                   </a>
                 </li>
               </ul>
-             <a
-  href="/#"
-  
-  className="mb-2 inline-block text-base text-dark hover:text-primary hover:underline "
->
-  Forget Password?
-</a>
-<p className="text-base text-body-color ">
- 
-  <span className="pr-0.5 text-gray-500">Not a member yet?</span> 
-  <span className="pr-0.5"> </span> 
+              <a
+                href="/#"
+                className="mb-2 inline-block text-base text-dark hover:text-primary hover:underline "
+              >
+                Forget Password?
+              </a>
+              <p className="text-base text-body-color ">
+                <span className="pr-0.5 text-gray-500">Not a member yet?</span>
+                <span className="pr-0.5"> </span>
 
-  <a
-    href="/#"
-    className="text-blue-600 hover:underline" 
-  >
-    Sign Up
-  </a>
-</p>
+                <a href="/#" className="text-blue-600 hover:underline">
+                  Sign Up
+                </a>
+              </p>
 
               <div>
                 <span className="absolute right-1 top-1">

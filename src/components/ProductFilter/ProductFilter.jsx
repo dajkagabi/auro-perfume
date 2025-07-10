@@ -93,7 +93,7 @@ const ProductFilter = ({
           </div>
         </div>
 
-        {/* Nézetváltó Gombok eltávolítva */}
+      
       </div>
 
  

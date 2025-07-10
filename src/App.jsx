@@ -12,6 +12,8 @@ import Cart from './components/Cart/Cart';
 import Collections from './components/Collections/Collections';
 import Contact from './components/Contact/Contact';
 import Profile from './components/Profile/Profile';
+import Wishlist from './components/Wishlist/Wishlist';
+import { WishlistProvider } from './components/WishlistContext/WishlistContext';
 
 const MainNavbar = ({ onCartClick }) => {
   const { cartItems } = useCart(); 
@@ -30,6 +32,7 @@ function App() {
 
   return (
     <Router>
+    <WishlistProvider>
       <CartProvider> 
         <MainNavbar onCartClick={toggleCart} />
         <main className="pt-20 px-6">
@@ -38,7 +41,7 @@ function App() {
             <Route path="/category" element={<Shop />} />
             <Route path="/collections" element={<Collections/>} />
             <Route path="/contact" element={<Contact/>} />
-            <Route path="/wishlist" element={<h1 className="text-2xl font-bold">Wishlist Page</h1>} />
+            <Route path="/wishlist" element={<Wishlist/>} />
             <Route path="/cart" element={<Cart/>} />
             <Route path="/profile" element={<Profile/>} />
             <Route path="/product/:id" element={<ProductCard/>} />
@@ -49,6 +52,7 @@ function App() {
   
         <Cart isOpen={isCartOpen} onClose={toggleCart} />
       </CartProvider>
+      </WishlistProvider>
     </Router>
   );
 }
