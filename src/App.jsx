@@ -10,7 +10,8 @@ import ProductCard from './components/productCard/ProductCard';
 import Shop from './components/Shop/Shop'; 
 import Cart from './components/Cart/Cart'; 
 import Collections from './components/Collections/Collections';
-
+import Contact from './components/Contact/Contact';
+import Profile from './components/Profile/Profile';
 
 const MainNavbar = ({ onCartClick }) => {
   const { cartItems } = useCart(); 
@@ -36,10 +37,10 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/category" element={<Shop />} />
             <Route path="/collections" element={<Collections/>} />
-            <Route path="/contact" element={<h1 className="text-2xl font-bold">Contact Page</h1>} />
+            <Route path="/contact" element={<Contact/>} />
             <Route path="/wishlist" element={<h1 className="text-2xl font-bold">Wishlist Page</h1>} />
             <Route path="/cart" element={<Cart/>} />
-            <Route path="/profile" element={<h1 className="text-2xl font-bold">Profile Page</h1>} />
+            <Route path="/profile" element={<Profile/>} />
             <Route path="/product/:id" element={<ProductCard/>} />
             <Route path="/shop" element={<Shop />} />
           </Routes>
