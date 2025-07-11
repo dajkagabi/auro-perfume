@@ -40,7 +40,4 @@ npm install
 npm run dev
 ```
 
->  A videó és médiafájlokat a `src/assets/` mappába helyezd.
-
----
 
