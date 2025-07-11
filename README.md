@@ -25,7 +25,7 @@ A projekt egy **React** alapú illatszer webshop felület, amely reszponzív, le
 
 ```bash
 git clone https://github.com/your-username/auro.git
-cd auro
+cd auro-perfume
 ```
 
 2. **Függőségek telepítése**
