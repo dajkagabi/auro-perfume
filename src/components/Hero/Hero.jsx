@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 import video from "../../assets/ll.mp4";
 
 const Hero = () => {
@@ -22,15 +23,29 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col justify-center items-center text-center text-white h-full px-4">
+        {/* Typewriter headline */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl md:text-5xl font-bold drop-shadow-lg mb-2 max-w-4xl"
+          className="text-3xl md:text-5xl font-bold drop-shadow-lg mb-4 max-w-4xl"
         >
-          Luxurious fragrances crafted with the finest ingredients to define your unique presence.
+          <Typewriter
+            words={[
+              "Fragrance is identity.",
+              "Luxury in every note.",
+              "Define your presence.",
+            ]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={2000}
+          />
         </motion.h1>
 
+        {/* Subheadline */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -40,6 +55,7 @@ const Hero = () => {
           Explore Scents That Define You
         </motion.p>
 
+        {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -54,9 +70,9 @@ const Hero = () => {
           </Link>
           <Link
             to="/collections"
-            className="px-6 py-3 border border-white text-white font-medium rounded-full hover:bg-white hover:text-black transition duration-300"
+            className="px-6 py-3 bg-white/20 border border-white text-white font-medium rounded-full hover:bg-white hover:text-black transition duration-300 backdrop-blur-sm"
           >
-            Discover More
+            Find Your Scent
           </Link>
         </motion.div>
 
