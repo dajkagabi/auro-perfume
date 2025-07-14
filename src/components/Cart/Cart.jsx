@@ -1,6 +1,6 @@
-// src/components/Cart/Cart.jsx
+
 import React from 'react';
-import { useCart } from '../CartContext/CartContext';// Importáljuk a kosár kontextust
+import { useCart } from '../CartContext/CartContext';
 
 const Cart = ({ isOpen, onClose }) => {
   const { cartItems, removeFromCart, increaseQuantity, decreaseQuantity, cartTotal } = useCart();

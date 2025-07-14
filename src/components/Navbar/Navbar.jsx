@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 import { useCart } from "../CartContext/CartContext";
 import { useWishlist } from "../WishlistContext/WishlistContext";
 
-// Lucide ikonok
+
 import { Heart, ShoppingCart, User, Menu, X } from "lucide-react";
 
 const Navbar = ({ onCartClick }) => {

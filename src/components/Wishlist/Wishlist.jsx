@@ -1,9 +1,8 @@
-// src/components/Wishlist/Wishlist.jsx
 import React from 'react';
 import { useWishlist } from '../WishlistContext/WishlistContext';
 
 const Wishlist = () => {
-  // Itt módosítjuk: wishlistItems helyett wishlist
+ 
   const { wishlist, removeFromWishlist } = useWishlist();
 
   return (
@@ -14,10 +13,10 @@ const Wishlist = () => {
            WishList
           </h1>
 
-          {/* Itt is módosítjuk: wishlistItems helyett wishlist, és hozzáadunk egy ellenőrzést, ha a wishlist undefined */}
+          
           {!wishlist || wishlist.length === 0 ? (
             <p className="text-center text-body-color text-lg">
-              Your wishlist is empty. Start adding products!
+              Your wishlist is empty. 
             </p>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

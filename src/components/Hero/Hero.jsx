@@ -7,7 +7,7 @@ import video from "../../assets/ll.mp4";
 const Hero = () => {
   return (
     <section className="relative w-full h-[100dvh] overflow-hidden">
-      {/* Background Video */}
+
       <video
         autoPlay
         muted
@@ -18,12 +18,11 @@ const Hero = () => {
         <source src={video} type="video/mp4" />
       </video>
 
-      {/* Overlay */}
+   
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10" />
 
-      {/* Content */}
       <div className="relative z-20 flex flex-col justify-center items-center text-center text-white h-full px-4">
-        {/* Typewriter headline */}
+        {/* Typewriter  */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,7 +44,7 @@ const Hero = () => {
           />
         </motion.h1>
 
-        {/* Subheadline */}
+        
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +54,7 @@ const Hero = () => {
           Explore Scents That Define You
         </motion.p>
 
-        {/* CTAs */}
+      
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -76,7 +75,7 @@ const Hero = () => {
           </Link>
         </motion.div>
 
-        {/* Scroll down hint */}
+        
         <motion.div
           className="absolute bottom-10 left-1/2 -translate-x-1/2 text-sm text-white/80 animate-bounce"
           initial={{ opacity: 0 }}
