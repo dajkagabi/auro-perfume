@@ -6,7 +6,7 @@ import { useCart } from './components/CartContext/CartContext';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-import ProductCard from './components/productCard/ProductCard';
+import ProductCard from './components/ProductCard/ProductCard';
 import Shop from './components/Shop/Shop'; 
 import Cart from './components/Cart/Cart'; 
 import Collections from './components/Collections/Collections';
